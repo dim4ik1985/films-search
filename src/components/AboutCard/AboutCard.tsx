@@ -22,27 +22,22 @@ export const AboutCard = (props: IAboutCardProps) => {
         )}
 
         {!isLoading && (
-          <Card className={"flex-row"}>
-            <Card.Img variant="top" src={film.Poster} style={{ width: "25rem" }} />
+          <Card style={{ width: "20rem" }}>
+            <Card.Img variant="top" src={film.Poster} />
             <Card.Body>
               <Card.Title>{film.Title}</Card.Title>
-              <ListGroup className="list-group-flush">
-                <ListGroup.Item>
-                  {film.Genre} / {film.Year}{" "}
-                </ListGroup.Item>
-                <ListGroup.Item>
-                  <Card.Text>{film.Plot}</Card.Text>
-                </ListGroup.Item>
-              </ListGroup>
-
-              <ListGroup className="list-group-flush">
-                <ListGroup.Item>
-                  {film.Runtime} / {film.Rated}
-                </ListGroup.Item>
-                <ListGroup.Item>Director: {film.Director}</ListGroup.Item>
-                <ListGroup.Item>Actors: {film.Actors}</ListGroup.Item>
-              </ListGroup>
+              <Card.Text>{film.Plot}</Card.Text>
             </Card.Body>
+            <ListGroup className="list-group-flush">
+              <ListGroup.Item>
+                {film.Genre} / {film.Year}
+              </ListGroup.Item>
+              <ListGroup.Item>
+                {film.Runtime} / {film.Rated}
+              </ListGroup.Item>
+              <ListGroup.Item>Director: {film.Director}</ListGroup.Item>
+              <ListGroup.Item>Actors: {film.Actors}</ListGroup.Item>
+            </ListGroup>
           </Card>
         )}
       </Container>

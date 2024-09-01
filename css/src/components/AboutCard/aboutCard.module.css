@@ -1,9 +1,10 @@
 .container {
   margin: 0 auto;
-  padding: 50px;
+  padding: 10px;
   max-width: 1200px;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=aboutCard.module.css.map */
