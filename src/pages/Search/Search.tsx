@@ -37,7 +37,9 @@ export const Search = () => {
         onSubmit={handleSubmit}
       >
         <Form.Group className={"mb-5 d-flex flex-column align-items-center"} controlId="formSearch">
-          <Form.Label className={"text-uppercase fs-5"}>Search films</Form.Label>
+          <Form.Label className={"text-uppercase fs-5"} column={"sm"}>
+            Search films
+          </Form.Label>
           <Form.Control
             className={"fs-5"}
             type="text"
