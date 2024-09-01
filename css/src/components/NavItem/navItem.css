@@ -1,0 +1,20 @@
+.menu__item {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #6681af;
+  opacity: 0.6;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+.menu__item:hover {
+  opacity: 1;
+  border-bottom-color: hsl(213, 52%, 67%);
+}
+.menu__item-active, .menu__item-active:hover {
+  opacity: 1;
+  border-bottom-color: hsl(215, 96%, 68%);
+}
+
+/*# sourceMappingURL=navItem.css.map */

@@ -1,0 +1,19 @@
+.btn__home {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  cursor: pointer;
+  //background-color: #cccccc;
+  opacity: 0.5;
+  //border-radius: 50%;
+
+  img {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+}
+
+.btn__home:hover {
+  opacity: 1;
+}

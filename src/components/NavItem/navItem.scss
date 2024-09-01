@@ -1,0 +1,21 @@
+.menu__item {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #6681af;
+  opacity: 0.6;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+
+  &:hover {
+    opacity: 1;
+    border-bottom-color: hsl(213, 52%, 67%);
+  }
+
+  &-active,
+  &-active:hover {
+    opacity: 1;
+    border-bottom-color: hsl(215, 96%, 68%);
+  }
+}

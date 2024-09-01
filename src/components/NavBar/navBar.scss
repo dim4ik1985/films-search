@@ -1,0 +1,124 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav__wrapper {
+  display: flex;
+  position: relative;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px 0;
+  border-bottom: black solid 1px;
+  z-index: 999;
+
+  .burger__menu {
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 2rem;
+
+    span {
+      width: 100%;
+      height: 0.25rem;
+      background-color: #5a5959;
+      border-radius: 0.2rem;
+    }
+  }
+
+  .nav__logo {
+    font-size: 35px;
+    padding: 0 20px;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    padding-right: 20px;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav__wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: flex-start;
+    .burger__menu {
+      display: flex;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .burger__menu-active {
+      opacity: 0.5;
+    }
+    .nav__logo {
+      font-size: 35px;
+    }
+
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: #d8cfcf solid 1px;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      right: 0; /* Hide the menu by default */
+      width: 150px;
+      max-height: 50vh;
+      background-color: #fff;
+      padding: 100px 20px 20px 20px;
+      transform: translateX(150%);
+      transition: transform 0.3s linear;
+      gap: 15px;
+      z-index: 1;
+    }
+
+    .nav__list-active {
+      transform: translateX(20%);
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .nav__wrapper {
+    font-size: 20px;
+    .nav__logo {
+      font-size: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__wrapper {
+    font-size: 30px;
+    .nav__logo {
+      font-size: 50px;
+    }
+
+    .nav__list {
+      font-size: 30px;
+    }
+  }
+}

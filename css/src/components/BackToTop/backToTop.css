@@ -1,0 +1,23 @@
+.btn-scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.5;
+}
+
+.btn-scroll-up:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .btn-scroll-up img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 642px) {
+  .btn-scroll-up {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=backToTop.css.map */

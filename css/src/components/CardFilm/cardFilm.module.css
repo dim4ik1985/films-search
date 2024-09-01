@@ -1,0 +1,21 @@
+.btn__favorite {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn__favorite img {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=cardFilm.module.css.map */

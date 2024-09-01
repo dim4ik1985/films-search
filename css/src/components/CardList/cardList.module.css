@@ -1,0 +1,9 @@
+.films {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0 0 0;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=cardList.module.css.map */

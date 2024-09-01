@@ -1,0 +1,18 @@
+.btn__home {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.btn__home img {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+
+.btn__home:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=backToHome.css.map */
